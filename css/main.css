@@ -1,0 +1,303 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+header,
+main {
+    padding: 5rem 1.5rem;
+}
+
+.footer-content {
+    padding: 2rem 5rem;
+}
+
+h1,
+h2,
+h3 {
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 1rem;
+}
+
+p,
+button,
+a {
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5rem;
+}
+
+a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+p,
+a {
+    padding-bottom: 1.2rem;
+}
+
+#snippets,
+#features .image-container,
+#features,
+aside {
+    padding-bottom: 3.5rem;
+}
+
+.snippets-text,
+.features-description,
+.features,
+.features .icon-container {
+    margin-bottom: 2rem;
+}
+
+/* Button Styles */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+button {
+    border: none;
+    border-radius: 2rem;
+    color: hsl(0, 100%, 100%);
+    padding: 0.8rem 4rem;
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid hsl(171, 66%, 35%);
+    box-shadow: 1px 6px 10px hsl(171deg 66% 44% / 40%);
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsl(233, 100%, 60%);
+    box-shadow: 1px 6px 10px hsl(233deg 100% 69% / 40%);
+}
+
+/* Header Styles */
+
+header {
+    background: url(../images/bg-header-mobile.png) no-repeat top center;
+    background-size: cover;
+}
+
+header .logo {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 40%;
+    max-width: 150px;
+}
+
+/* Snippets Styles */
+
+.snippets-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.snippets-container img {
+    padding: 1.5rem 0;
+}
+
+/* Features Styles */
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features .icon-container {
+    margin: 0 auto;
+    width: 12%;
+}
+
+/* Logos Styles */
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+aside figure {
+    width: 50%;
+    max-width: 250px;
+}
+
+/* Download Styles */
+
+.download-description {
+    padding: 4rem 0;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: hsl(220, 18%, 97%);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .logo {
+    width: 25%;
+    max-width: 50px;
+}
+
+.links {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 20px;
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1440px) {
+
+    /* Header Styles */
+
+    header {
+        background: url(../images/bg-header-desktop.png) no-repeat top center;
+        background-size: cover;
+    }
+
+    .description {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .buttons {
+        flex-direction: row;
+    }
+
+    /* Snippets Styles */
+
+    .snippets-container {
+        padding: 10% 0;
+        position: relative;
+        width: 93%;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .snippets-container figure {
+        position: absolute;
+        left: -5%;
+        width: 50%;
+    }
+
+    .snippets {
+        text-align: left;
+    }
+
+    .snippets-text {
+        width: 55%;
+    }
+
+    /* Features Styles */
+
+    #features .image-container {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .features-container {
+        padding-top: 2rem;
+        align-items: baseline;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .features {
+        flex-basis: 25%;
+    }
+
+    .icon-container {
+        padding-bottom: 1.5rem;
+    }
+
+    /* Logos Styles */
+
+    aside {
+        margin: 0 auto;
+        width: 80%;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    /* Footer Styles */
+
+    .footer-content {
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    .links {
+        text-align: left;
+        flex-flow: row wrap;
+    }
+
+    .links a {
+        flex-basis: 33%;
+    }
+
+    .social-icons {
+        width: 10%;
+    }
+}
